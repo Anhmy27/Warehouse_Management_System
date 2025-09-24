@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="result">
+      <h2>Your Result</h2>
+      <div id="score">
+        <span id="overall">76</span>
+        <span id="hundred">of 100</span>
+      </div>
+      <strong>Great</strong>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="summary">
+
+      <h2 id="sumhead">Summary</h2>
+      <div id="reaction" class="summary-item">
+        <div class="icon">
+          <img src="./assets/images/icon-reaction.svg" alt="Reaction Icon">
+          <span>Reaction</span>
+        </div>
+
+        <span>
+          <span class="score">80</span>
+          <span class="total">/100</span>
+        </span>
+      </div>
+      <div id="memory" class="summary-item">
+        <div class="icon">
+          <img src="./assets/images/icon-memory.svg" alt="Memory Icon">
+          <span>Memory</span>
+        </div>
+
+        <span>
+          <span class="score">92</span>
+          <span class="total">/100</span>
+        </span>
+      </div>
+      <div id="verbal" class="summary-item">
+        <div class="icon">
+          <img src="./assets/images/icon-verbal.svg" alt="Verbal Icon">
+          <span>Verbal</span>
+        </div>
+
+        <span>
+          <span class="score">61</span>
+          <span class="total">/100</span>
+        </span>
+      </div>
+      <div id="visual" class="summary-item">
+        <div class="icon">
+          <img src="./assets/images/icon-visual.svg" alt="Visual Icon">
+          <span>Visual</span>
+        </div>
+
+        <span>
+          <span class="score">73</span>
+          <span class="total">/100</span>
+        </span>
+      </div>
+      <div class="continue"><input type="button" value="Continue"></div>
+
+    </div>
+</body>
+
+</html>
