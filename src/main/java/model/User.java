@@ -25,6 +25,24 @@ public class User {
         this.fullname = fullname;
     }
 
+    public User(String uid, String username, String password, String fullname, String email, String phone, String gender, Date dateOfBirth, String address, String image, String status, String rid, String wid) {
+        this.uid = uid;
+        this.username = username;
+        this.password = password;
+        this.fullname = fullname;
+        this.email = email;
+        this.phone = phone;
+        this.gender = gender;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.image = image;
+        this.status = status;
+        this.rid = rid;
+        this.wid = wid;
+    }
+    
+    
+
     public String getUid() {
         return uid;
     }
