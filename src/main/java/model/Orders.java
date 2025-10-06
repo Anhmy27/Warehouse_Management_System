@@ -12,6 +12,8 @@ public class Orders {
     private String scheduleId;
     private String status;          // pending | processing | done | cancelled
     private String note;
+    private String createdByName;
+    private String assignedToName;
 
     public Orders() {}
 
@@ -44,12 +46,28 @@ public class Orders {
         this.createdBy = createdBy;
     }
 
+    public String getCreatedByName() {
+        return createdByName;
+    }
+
+    public void setCreatedByName(String createdByName) {
+        this.createdByName = createdByName;
+    }
+
     public String getAssignedTo() {
         return assignedTo;
     }
 
     public void setAssignedTo(String assignedTo) {
         this.assignedTo = assignedTo;
+    }
+
+    public String getAssignedToName() {
+        return assignedToName;
+    }
+
+    public void setAssignedToName(String assignedToName) {
+        this.assignedToName = assignedToName;
     }
 
     public Date getCreatedAt() {

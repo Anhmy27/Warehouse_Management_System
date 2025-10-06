@@ -1,41 +1,32 @@
 package model;
 
-/**
- * OrderDetail model updated to match inbound workflow needs.
- * Includes product info and expected/actual quantities.
- */
-public class OrderDetail {
-    private String orderDetailId;
-    private String orderId;
+public class VoucherDetail {
+    private String voucherDetailId;
+    private String voucherId;
     private String productId;
-    private String productName;
-    private String productImg;
+    private String productName;   // ✅ thêm
+    private String productImg;    // ✅ thêm
     private int quantityExpected;
     private int quantityActual;
     private double price;
+    private double total;
 
-    public OrderDetail() {}
+    public VoucherDetail() {}
 
-    public OrderDetail(String orderDetailId, String orderId, String productId) {
-        this.orderDetailId = orderDetailId;
-        this.orderId = orderId;
-        this.productId = productId;
+    public String getVoucherDetailId() {
+        return voucherDetailId;
     }
 
-    public String getOrderDetailId() {
-        return orderDetailId;
+    public void setVoucherDetailId(String voucherDetailId) {
+        this.voucherDetailId = voucherDetailId;
     }
 
-    public void setOrderDetailId(String orderDetailId) {
-        this.orderDetailId = orderDetailId;
+    public String getVoucherId() {
+        return voucherId;
     }
 
-    public String getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public void setVoucherId(String voucherId) {
+        this.voucherId = voucherId;
     }
 
     public String getProductId() {
@@ -46,19 +37,19 @@ public class OrderDetail {
         this.productId = productId;
     }
 
-    public String getProductName() {
+    public String getProductName() {          // ✅ thêm getter
         return productName;
     }
 
-    public void setProductName(String productName) {
+    public void setProductName(String productName) {   // ✅ sửa lại setter
         this.productName = productName;
     }
 
-    public String getProductImg() {
+    public String getProductImg() {           // ✅ thêm getter
         return productImg;
     }
 
-    public void setProductImg(String productImg) {
+    public void setProductImg(String productImg) {     // ✅ sửa lại setter
         this.productImg = productImg;
     }
 
@@ -84,5 +75,13 @@ public class OrderDetail {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 }

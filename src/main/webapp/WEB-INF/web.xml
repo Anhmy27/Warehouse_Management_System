@@ -3,4 +3,44 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+
+    <!-- OrderController -->
+    <servlet>
+        <servlet-name>OrderController</servlet-name>
+        <servlet-class>dal.OrderController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderController</servlet-name>
+        <url-pattern>/orders</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VoucherController</servlet-name>
+        <servlet-class>dal.VoucherController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VoucherController</servlet-name>
+        <url-pattern>/voucher</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RackController</servlet-name>
+        <servlet-class>dal.RackController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RackController</servlet-name>
+        <url-pattern>/rack</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReportController</servlet-name>
+        <servlet-class>dal.ReportController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportController</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+
+    <!-- VoucherController and RackController will be added later -->
+
 </web-app>
