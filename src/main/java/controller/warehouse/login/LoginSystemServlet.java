@@ -121,7 +121,7 @@ public class LoginSystemServlet extends HttpServlet {
         } else {
             // Sai email hoặc password
             request.setAttribute("error", "Email hoặc mật khẩu không đúng!");
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            request.getRequestDispatcher("views/access/page-login.jsp").forward(request, response);
         }
     }
 

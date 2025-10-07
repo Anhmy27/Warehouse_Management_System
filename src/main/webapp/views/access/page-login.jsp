@@ -84,20 +84,22 @@
                                 <div class="form-login">
                                     <label>Email</label>
                                     <div class="form-addons">
-                                        <input type="text" name="email" placeholder="Enter your email address" required>
+                                        <input type="text" name="email" value="<%= email %>"
+                                               placeholder="Enter your email address" required>
                                         <img src="assets/img/icons/mail.svg" alt="img">
                                     </div>
                                 </div>
                                 <div class="form-login">
                                     <label>Password</label>
                                     <div class="pass-group">
-                                        <input type="password" name="password" class="pass-input" placeholder="Enter your password" required>
+                                        <input type="password" name="password" value="<%= password %>"
+                                               class="pass-input" placeholder="Enter your password" required>
                                         <span class="fas toggle-password fa-eye-slash"></span>
                                     </div>
                                 </div>
                                 <div class="form-login remember-me">
                                     <div class="remember-checkbox">
-                                        <input type="checkbox" id="rememberMe" name="rememberMe" value="true">
+                                        <input type="checkbox" id="rememberMe" name="rememberMe" value="true" <%= rememberChecked %>>
                                         <label for="rememberMe">Remember me</label>
                                     </div>
                                     <div class="alreadyuser">
